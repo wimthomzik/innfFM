@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: rgb(34,34,34);
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ nav > ul {
 
 nav > ul > li > a {
     text-decoration: none;
-    color: white;
+    color: rgb(221,221,221);
     font-size: 25px;
 }
 
@@ -47,7 +47,7 @@ nav > ul > li > a {
 }
 
 .title-welcome-section {
-    color: white;
+    color: rgb(221,221,221);
     position: absolute;
     z-index: 1;
     margin: auto;
@@ -59,7 +59,7 @@ nav > ul > li > a {
 }
 
 .sub-title-welcome-section{
-    color: white;
+    color: rgb(221,221,221);
     position: absolute;
     z-index: 1;
     margin: auto;
@@ -71,8 +71,8 @@ nav > ul > li > a {
 }
 
 .container-about-section {
-    background-color: black;
-    color: white;
+    background-color: rgb(34,34,34);
+    color: rgb(221,221,221);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,7 +128,7 @@ nav > ul > li > a {
 
 .author-picture {
     border-radius: 50%;
-    border: 4px solid white;
+    border: 4px solid rgb(221,221,221);
 }
 
 .author-description {
