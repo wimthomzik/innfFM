@@ -19,10 +19,6 @@ header {
     z-index: 10000;
 }
 
-nav {
-
-}
-
 nav > ul {
     list-style: none;
     display: flex;
@@ -44,6 +40,10 @@ nav > ul > li > a {
     z-index: -1;
 }
 
+#welcome-section {
+    height: calc(100vh - 75px);
+}
+
 .logo-welcome-section {
     position: absolute;
     z-index: 1;
@@ -53,4 +53,35 @@ nav > ul > li > a {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.container-about-section {
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 70px;
+    width: 100%;
+    padding: 100px 200px 150px 200px;
+    margin: 0;
+}
+
+.container-about-section > img {
+    width: 220px;
+    height: 221px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.container-about-section > h1 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.container-about-section > p {
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
 }
