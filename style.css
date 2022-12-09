@@ -5,7 +5,7 @@
 }
 
 body {
-    padding: 60px 0 0 0;
+    padding: 75px 0 0 0;
 }
 
 header {
@@ -16,6 +16,7 @@ header {
     width: 100%;
     margin: 0;
     padding: 30px;
+    z-index: 10000;
 }
 
 nav {
@@ -35,8 +36,21 @@ nav > ul > li > a {
     color: white;
 }
 
-#welcome-section > img {
+.background-welcome-section {
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 100%;
     margin: 0;
+    filter: brightness(25%);
+    z-index: -1;
+}
+
+.logo-welcome-section {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
