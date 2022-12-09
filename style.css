@@ -42,6 +42,31 @@ nav > ul > li > a {
 
 #welcome-section {
     height: calc(100vh - 75px);
+    text-align: center;
+}
+
+.title-welcome-section {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 60px;
+}
+
+.sub-title-welcome-section{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 370px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 40px;
 }
 
 .logo-welcome-section {
@@ -53,6 +78,7 @@ nav > ul > li > a {
     bottom: 0;
     left: 0;
     right: 0;
+    visibility: hidden;
 }
 
 .container-about-section {
@@ -85,3 +111,4 @@ nav > ul > li > a {
     font-size: 30px;
     text-align: left;
 }
+
