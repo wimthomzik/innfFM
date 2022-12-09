@@ -24,12 +24,13 @@ nav > ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav > ul > li > a {
     text-decoration: none;
     color: white;
+    font-size: 25px;
 }
 
 .background-welcome-section {
@@ -70,33 +71,79 @@ nav > ul > li > a {
 }
 
 .container-about-section {
-    background-color: grey;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    gap: 70px;
+    gap: 200px;
     width: 100%;
-    padding: 100px 200px 150px 200px;
+    padding: 200px 50px 175px 50px;
     margin: 0;
 }
 
-.container-about-section > img {
-    width: 220px;
-    height: 221px;
-    border: 5px solid white;
+.container-subjects {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.subject > i {
+    font-size: 80px;
+}
+
+
+.subject > h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.subject > p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.container-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.author-picture {
     border-radius: 50%;
+    border: 4px solid white;
 }
 
-.container-about-section > h1 {
+.author-description {
+    text-align: center;
+    line-height: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.author-name {
     font-weight: bold;
-    font-size: 70px;
-}
-
-.container-about-section > p {
-    font-weight: normal;
     font-size: 30px;
-    text-align: left;
 }
 
+.author-functionality {
+    font-weight: lighter;
+    font-size: 20px;
+}
