@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 1px solid black;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 
 header {
     background-color: rgb(34,34,34);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -146,4 +147,51 @@ nav > ul > li > a {
 .author-functionality {
     font-weight: lighter;
     font-size: 20px;
+}
+
+.container-episodes-section {
+    background-color: rgb(221,221,221);
+    color: rgb(34,34,34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 100px;
+    width: 100%;
+    padding: 100px 50px 175px 50px;
+    margin: 0;
+}
+
+.heading-episodes-section {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container-episodes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+    width: 100%;
+    padding: 50px 50px 50px 50px;
+    margin: 0;
+    border: 5px solid rgb(34,34,34);
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+
+.container-episode-post {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-items: center;
+}
+
+.container-episode-post-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
