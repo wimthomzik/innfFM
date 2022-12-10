@@ -2,11 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid black;
 }
 
 body {
     padding: 75px 0 0 0;
+}
+
+p {
+    line-height: 20px;
 }
 
 header {
@@ -174,10 +177,8 @@ nav > ul > li > a {
     justify-items: center;
     gap: 50px;
     width: 100%;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 250px 50px 250px;
     margin: 0;
-    border: 5px solid rgb(34,34,34);
-    border-radius: 5px;
     overflow: scroll;
 }
 
@@ -187,6 +188,7 @@ nav > ul > li > a {
     flex-direction: row;
     align-items: top;
     justify-items: center;
+    gap: 50px;
 }
 
 .container-episode-post-text {
@@ -194,4 +196,5 @@ nav > ul > li > a {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    gap: 13px;
 }
