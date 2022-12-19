@@ -5,7 +5,8 @@
 }
 
 body {
-    padding: 75px 0 0 0;
+    padding: 0;
+    margin: 0;
 }
 
 p {
@@ -13,7 +14,7 @@ p {
 }
 
 header {
-    background-color: rgb(34,34,34);
+    background: transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +28,7 @@ nav > ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -37,12 +38,14 @@ nav > ul > li > a {
     font-size: 25px;
 }
 
-.background-welcome-section {
+.container-welcome{
     width: 100%;
     height: 100%;
-    margin: 0;
-    filter: brightness(25%);
-    z-index: -1;
+    margin: 0px;
+    align-content: center;
+    justify-content: center;
+    background-image: url(img/keynote.png);
+    background-size: cover;
 }
 
 #welcome-section {
@@ -50,33 +53,9 @@ nav > ul > li > a {
     text-align: center;
 }
 
-.title-welcome-section {
-    color: rgb(221,221,221);
-    position: absolute;
-    z-index: 1;
-    margin: auto;
-    top: 300px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 60px;
-}
-
-.sub-title-welcome-section{
-    color: rgb(221,221,221);
-    position: absolute;
-    z-index: 1;
-    margin: auto;
-    top: 370px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 40px;
-}
-
 .container-about-section {
-    background-color: rgb(34,34,34);
-    color: rgb(221,221,221);
+    background-color: rgb(221,221,221);
+    color: rgb(34,34,34);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,13 +105,13 @@ nav > ul > li > a {
     justify-items: center;
     gap: 40px;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 160px;
+    padding-right: 160px;
 }
 
 .author-picture {
     border-radius: 50%;
-    border: 4px solid rgb(221,221,221);
+    border: 4px solid rgb(34,34,34);
 }
 
 .author-description {
@@ -159,15 +138,18 @@ nav > ul > li > a {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    gap: 100px;
+    text-align: left;
+    gap: 0px;
     width: 100%;
-    padding: 100px 50px 175px 50px;
+    padding: 100px 50px 100px 50px;
     margin: 0;
 }
 
 .heading-episodes-section {
     font-weight: bold;
     font-size: 50px;
+    width: 100%;
+    padding-left: 250px;
 }
 
 .container-episodes {
@@ -175,7 +157,7 @@ nav > ul > li > a {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    gap: 50px;
+    gap: 100px;
     width: 100%;
     padding: 50px 250px 50px 250px;
     margin: 0;
@@ -197,4 +179,75 @@ nav > ul > li > a {
     align-items: center;
     justify-items: center;
     gap: 13px;
+    
+    height: 352px;
+}
+
+.container-episode-post-text > p {
+    line-height: 25px;
+    font-size: 18px;
+    overflow: scroll;
+}
+
+.container-sources {
+    background-color: rgb(221,221,221);
+    color: rgb(34,34,34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    gap: 20px;
+    width: 100%;
+    padding: 50px 50px 50px 50px;
+    margin: 0;
+}
+
+.heading-sources {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sub-heading-sources {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.podcast-links {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.link-button {
+    height: 85px;
+    width: 150px;
+    padding: 15px 50px 15px 50px;
+    font-size: 50px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.link-button > a {
+    color: rgb(34,34,34);
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
