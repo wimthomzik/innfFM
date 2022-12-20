@@ -248,6 +248,42 @@ nav > ul > li > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+    padding: 10px 50px 10px 50px;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media-links > a {
+    color: rgb(34,34,34);
+    text-decoration: none;  
+    font-size: 50px;
+}
+
+.other-links {
+    display: flex;
+    gap: 20px;
+    color: rgb(34,34,34);  
+    font-size: 15px;
+}
+
+.other-links > a {
+    text-decoration: none;
+    color: rgb(34,34,34);  
+    font-size: 15px;
+}
+
+.footer-logo {
+    color: rgb(34,34,34); 
 }
