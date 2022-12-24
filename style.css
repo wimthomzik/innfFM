@@ -22,8 +22,36 @@ header {
     left: 0;
     width: 100%;
     margin: 0;
-    padding: 30px;
+    padding: 20px 50px 20px 50px;
     z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 350px;
+}
+
+
+.img {
+    height: 80px;
+}
+
+.podcast-links-headers {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 30px;
+}
+
+.podcast-links-headers > li > a {
+    text-decoration: none;
+    color: rgb(221,221,221);
+    font-size: 25px;
+}
+
+.podcast-links-headers > li > a:hover {
+    opacity: 0.85;
+    transition: 300ms;
 }
 
 nav > ul {
@@ -31,16 +59,38 @@ nav > ul {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    gap: 40px;
+    gap: 50px;
 }
 
-nav > ul > li > a {
+.nav-link-ani {
     text-decoration: none;
     color: rgb(221,221,221);
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: 1px 1px black;
-    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.75;
 }
+
+.nav-link-ani:hover {
+    opacity: 1;
+}
+
+.nav-link-ani::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    top: 75px;
+    background-color: rgb(221,221,221);
+  }
+
+  .nav-link-ani::before {
+    width: 0%;
+    bottom: 5px;
+  }
+  .nav-link-ani:hover::before {
+    width: 6.5%;
+  }
 
 .container-welcome {
     width: 100%;
@@ -54,8 +104,8 @@ nav > ul > li > a {
     z-index: 0;
 }
 
-.container-welcome > p {
-    height: 50%;
+.message {
+    height: 40%;
     width: 100%;
     padding-top: 150px;
     font-weight: bold;
@@ -64,6 +114,14 @@ nav > ul > li > a {
     text-shadow: -3px -3px 0 rgb(210, 18, 18), 3px -3px 0 rgb(210, 18, 18), -3px 3px 0 rgb(210, 18, 18), 3px 3px 0 rgb(210, 18, 18);
 
 }
+
+.scroll {
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(34,34,34);
+}
+
 
 
 .container-about-section {
@@ -103,7 +161,6 @@ nav > ul > li > a {
 
 .subject > i {
     font-size: 80px;
-    text-shadow: 2px 2px white;
 }
 
 
