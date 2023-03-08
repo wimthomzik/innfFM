@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
 }
 
 :root {
@@ -87,7 +86,7 @@ header {
             gap: 50px;
         }
 
-        .nav-link-ani {
+        .nav-link-ani, .nav-link-ano, .nav-link-ana {
             text-decoration: none;
             font-size: 20px;
             text-shadow: 1px 1px black;
@@ -95,11 +94,11 @@ header {
             opacity: 0.75;
         }
 
-        .nav-link-ani:hover {
+        .nav-link-ani:hover, .nav-link-ano:hover, .nav-link-ana:hover {
             opacity: 1;
         }
 
-        .nav-link-ani::before {
+        .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before {
             transition: 300ms;
             height: 5px;
             content: "";
@@ -108,14 +107,24 @@ header {
             background-color: rgb(221,221,221);
         }
 
-        .nav-link-ani::before {
+        .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before {
             width: 0%;
             bottom: 5px;
         }
         .nav-link-ani:hover::before {
-            width: 6.5%;
+            width: 98px;
         }
 
+        .nav-link-ano:hover::before {
+            
+            width: 130px;
+        }
+
+        .nav-link-ana:hover::before {
+            width: 51px;
+        }
+
+        
 
 
 
