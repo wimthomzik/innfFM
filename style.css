@@ -246,10 +246,7 @@ header {
     align-items: center;
     justify-items: center;
     text-align: left;
-    gap: 0px;
     width: 100%;
-    padding: 100px 0px 100px 0px;
-    margin: 0;
 }
     /*EPISODES-SECTION > HEADING*/
     .heading-episodes-section {
@@ -265,12 +262,11 @@ header {
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        gap: 100px;
         width: 100%;
-        padding: 50px 200px 50px 250px;
-        margin: 0;
         overflow: scroll;
+        padding-top: 50px;
     }
+    
 
         /*EPISODES-SECTION > CONTAINER FOR EPISODES > ITEM*/
         .container-episode-post {
@@ -278,8 +274,17 @@ header {
             flex-direction: row;
             align-items: top;
             justify-items: center;
-            gap: 50px;
+            gap: 30px;
+            padding: 50px 200px 50px 250px;
         }
+
+        .most-recent {
+            padding: 50px 90px 50px 90px;
+            border: 2px solid var(--default-font-color);
+            border-radius: 5px;
+            width: 90%;
+        }
+
 
             .container-episode-post > iframe {
                 box-shadow: 6px 6px 1px rgb(34,34,34);
