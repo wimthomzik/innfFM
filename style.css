@@ -253,7 +253,7 @@ header {
         font-weight: bold;
         font-size: 50px;
         width: 100%;
-        padding-left: 250px;
+        text-align: center;
     }
 
     /*EPISODES-SECTION > CONTAINER FOR EPISODES*/
@@ -274,15 +274,16 @@ header {
             flex-direction: row;
             align-items: top;
             justify-items: center;
-            gap: 30px;
-            padding: 50px 200px 50px 250px;
+            gap: 40px;
+            padding: 50px 150px 50px 200px;
         }
 
         .most-recent {
-            padding: 50px 90px 50px 90px;
-            border: 2px solid var(--default-font-color);
+            padding: 50px 60px 50px 40px;
+            border: 1px solid var(--default-font-color);
             border-radius: 5px;
             width: 90%;
+            margin-bottom: 40px;
         }
 
 
@@ -295,17 +296,25 @@ header {
                 flex-direction: column;
                 align-items: center;
                 justify-items: center;
-                gap: 17px;
                 height: 352px;
             }
 
                 .container-episode-post-text > h1 {
                     text-decoration: underline;
+                    margin-bottom: 15px;
+                    font-size: 25px;
+                    letter-spacing: 1px;
+                }
+
+                .container-episode-post-text > h2 {
+                    align-self: flex-start;
+                    font-weight: lighter;
+                    font-size: 21px;
                 }
 
                 .container-episode-post-text > p {
                     line-height: 25px;
-                    font-size: 18px;
+                    font-size: 16px;
                     overflow: scroll;
                 }
 
