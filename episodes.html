@@ -11,6 +11,16 @@
     </head>
     <body>
 
+
+
+
+
+
+
+
+
+
+
         <!--HEADER-->
         <header>
             <img class="img" src="img/InnoFM_gross.jpg"> 
@@ -28,6 +38,20 @@
             </ul>
             
         </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!--EPISODES SECTION-->
@@ -95,8 +119,126 @@
                                         An dieser Stelle sei noch darauf hingewiesen, dass es sich um persönliche Fachinterpretationen handelt und die getroffenen Aussagen nicht zwangsläufig als Statement der jeweiligen Institution wie z.B. des ZIA zu verstehen sind.</p>
                                 </div>
                             </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 86</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 85</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 84</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 83</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 82</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 81</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 80</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 79</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 78</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 76</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 75</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 74</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 73</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="container-episode-post">
+                                <iframe></iframe> 
+                                <div class="container-episode-post-text">
+                                    <h2>Folge 72</h2><h1></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+
+    
+
+                            
                         
                         </div>
+
+                        <a id="show-more">Mehr anzeigen</a>
 
                         <div class="feedback">
                             <p>Ihre Meinung zählt: Haben Sie Feedback zum Podcast für mich oder möchten Sie mir einen Gast vorschlagen? Schreiben Sie mir: <a href="mailto:podcast@thomzik.de">podcast@thomzik.de</a></p>
@@ -105,6 +247,23 @@
                     
                 </section>
     
+        <script>
+            let loadMoreBtn = document.querySelector('#show-more');
+            let currentItem = 5;
+
+            loadMoreBtn.onclick = () =>{
+                let containerEpisodePost = [...document.querySelectorAll('.container-episode-post')];
+
+                for(var i = currentItem; i < currentItem + 5; i++){
+                    containerEpisodePost[i].style.display = 'flex';
+                }
+                currentItem += 5;
+
+                if(currentItem >= containerEpisodePost.length){
+                    loadMoreBtn.style.display = 'none';
+                }
+            }
+        </script>
 
 
 

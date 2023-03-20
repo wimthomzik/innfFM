@@ -7,3 +7,16 @@
     text-align: left;
     margin-left: 140px;
 }
+
+.container-episode-post {
+    display: none;
+}
+
+.container-episode-post:nth-child(1),
+.container-episode-post:nth-child(2),
+.container-episode-post:nth-child(3),
+.container-episode-post:nth-child(4),
+.container-episode-post:nth-child(5)
+{
+    display: flex;
+}

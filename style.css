@@ -332,7 +332,7 @@ header {
                     overflow: scroll;
                 }
 
-            .show-more {
+            #show-more {
                 border: 2px solid var(--background-color);
                 color: var(--background-color);
                 background-color: var(--default-font-color);
