@@ -12,7 +12,25 @@
 
         <!--HEADER-->
         <header>
+
             <img class="img" src="img/InnoFM_gross.jpg"> 
+
+            <p class="name">INNOFM Podcast</p>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-regular fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a class="nav-link-ani" href="#section-episodes">Episoden</a>
+                    <a class="nav-link-ano" href="#section-sources">Abonnieren</a>
+                    <a class="nav-link-ana" href="#section-host">Host</a>
+                </div>
+              </div>
+
+            
+           
+            
+
+            
                 <nav>
                     <ul>
                         <li><a class="nav-link-ani" href="#section-episodes">Episoden</a></li>
@@ -25,6 +43,8 @@
                 <li><a href="https://open.spotify.com/show/2F01b8YJJhX6rF1FCxVJrt?si=vlm4sLBWQ8SnUQM5nEqC3g&nd=1" class="fa-brands fa-spotify"></a></li>
                 <li><a href="https://music.amazon.de/podcasts/211090e3-bb52-4a80-aa7a-d6287e8d520d/innofm---interviewpodcast?ref=dm_sh_lg535rVJuIeZ2gXq0Cz0cJYEY" class="fa-brands fa-amazon"></a></li>
             </ul>
+
+            
             
         </header>
 
@@ -165,5 +185,25 @@
             </div>
 
         </footer>
+
+        <script>
+            
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
     </body>
 </html>
