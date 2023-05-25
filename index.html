@@ -14,7 +14,10 @@
         
         <header>
             <img class="img" src="img/InnoFM_gross.jpg"> 
-            <div class="navbar-container">
+
+            <h1 class="header-heading">InnoFM Podcast</h1>
+            
+           <div class="navbar-container">
                 <nav>
                     <ul>
                         <li><a class="nav-link-ani" href="#section-episodes">Episoden</a></li>
@@ -23,13 +26,26 @@
                     </ul>
                 </nav>
             </div>
+
             <ul class="podcast-links-headers">
                 <li><a href="https://podcasts.apple.com/de/podcast/innofm-interviewpodcast/id1465389661" class="fa-brands fa-apple"></a></li>
                 <li><a href="https://open.spotify.com/show/2F01b8YJJhX6rF1FCxVJrt?si=vlm4sLBWQ8SnUQM5nEqC3g&nd=1" class="fa-brands fa-spotify"></a></li>
                 <li><a href="https://music.amazon.de/podcasts/211090e3-bb52-4a80-aa7a-d6287e8d520d/innofm---interviewpodcast?ref=dm_sh_lg535rVJuIeZ2gXq0Cz0cJYEY" class="fa-brands fa-amazon"></a></li>
             </ul>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars dropbtn"></i></button>
+                
+              </div>
             
         </header>
+
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#welcome-section">Home</a>
+            <a href="#section-episodes">Episoden</a>
+            <a href="#section-sources">Abonnieren</a>
+            <a href="#section-host">Host</a>
+          </div>
 
         <!--WELCOME SECTION-->
         <section id="welcome-section">
@@ -147,7 +163,7 @@
             <div class="container-host-section">
                     <div class="container-author">
                         <div class="picture-host">
-                            <img class="author-picture" src="img/about_pic.jpeg" alt="Profil Markus Thomzik">
+                            <img class="author-picture" src="img/Thomzik,Markus-056-col-m.jpg" alt="Profil Markus Thomzik">
                         </div>
                         <div class="text-host">
                             <a class="author-name" href="https://www.linkedin.com/in/profthomzik?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bs2zg6qvKTyesxqUXNY%2FJXQ%3D%3D"><h1 class="author-name">Prof. Dr. Markus Thomzik</h1></a>
@@ -171,5 +187,27 @@
             </div>
 
         </footer>
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
     </body>
 </html>
