@@ -21,6 +21,18 @@
     --xs-line-height: 1.3125rem;
     --xxs-font-size: 0.75rem;
     --xxs-line-height: 1.125rem;
+
+    --primary-100:#FFFFFF;
+    --primary-200:#e0e0e0;
+    --primary-300:#9b9b9b;
+    --accent-100:#7F7F7F;
+    --accent-200:#ffffff;
+    --text-100:#FFFFFF;
+    --text-200:#777777;
+    --bg-100:#000000;
+    --bg-200:#161616;
+    --bg-300:#2c2c2c;
+      
 }
 
 body {
