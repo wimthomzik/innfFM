@@ -89,12 +89,25 @@ header {
     align-items: center;   
 }
 
+
         /*HEADER > NAV*/
 
         .img {
             height: 3.5rem;
             border-radius: 2px;
             
+        }
+
+        .name {
+            display: none;
+            font-weight: bold;
+            font-size: 23px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            word-wrap: break-word;
+            max-width: 195px;
         }
 
         /*HEADER > PODCAST LINKS*/
@@ -110,6 +123,86 @@ header {
         .podcast-links-headers > li > a:hover {
             opacity: 0.5;
             transition: 300ms;
+        }
+
+
+
+        /*HEADER > DROPDOWN*/
+
+        .dropdown {
+            display:none;
+            position: relative;
+            
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--background-color);
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: var(--default-font-color);
+            padding: 5px 5px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+    
+        .show {
+            display:block;
+        }
+        
+        .dropbtn {
+            font-size: 23px;
+            display: none;
+            color: var(--default-font-color);
+            background-color: var(--background-color);
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+
+
+        @media screen and (max-width: 730px){
+
+            .img {
+                height: 50px;
+            }
+            .podcast-links-headers, nav {
+                display: none;
+            }
+
+            .dropdown {
+                display: inline-block;
+            }
+
+            .dropbtn {
+                display: flex;
+            }
+
+            .name {
+                display: flex;
+            }
+
+            header {
+                padding: 20px 30px 20px 30px;
+            }
+
+
+            .container-welcome {
+                flex-direction: column;
+            }
+
+            .welcome-right > .img-welcome {
+                max-height: 40px;
+            }
+
         }
 
         /*HEADER > NAV*/
