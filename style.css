@@ -87,41 +87,101 @@ header {
     padding: 1.5rem 2.5rem 1.5rem 2.5rem;
     max-height: 9em;
     align-items: center;   
+    margin: 0;
 }
 
 
-        /*HEADER > NAV*/
+        /*HEADER*/
 
+
+        /*HEADER > IMG*/
         .img {
             height: 3.5rem;
             border-radius: 2px;
             
         }
 
-        .name {
-            display: none;
-            font-weight: bold;
-            font-size: 23px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            word-break: break-all;
-            word-wrap: break-word;
-            max-width: 195px;
+        /*HEADER > TITLE*/
+        .header-heading {
+            padding: 0;
+            margin: 0;
+            font-size: 0.8em;
         }
+
+
+        /*HEADER > NAV-BAR*/
+
+        .navbar-container {
+            display: none;
+        }
+
+        .navbar-container > nav > ul {
+            list-style: none;
+            align-content: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            gap: 2rem;
+            display: flex;
+            gap: 2.9rem;
+        }
+
+
+        .nav-link-ani, .nav-link-ano, .nav-link-ana {
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            opacity: 0.75;
+        }
+
+        .nav-link-ani:hover, .nav-link-ano:hover, .nav-link-ana:hover {
+            opacity: 1;
+        }
+
+        .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before {
+            transition: 300ms;
+            height: 5px;
+            content: "";
+            position: absolute;
+            top: 75px;
+            background-color: rgb(221,221,221);
+        }
+
+        .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before {
+            width: 0%;
+            bottom: 5px;
+        }
+        .nav-link-ani:hover::before {
+            width: 98px;
+        }
+
+        .nav-link-ano:hover::before {
+            
+            width: 130px;
+        }
+
+        .nav-link-ana:hover::before {
+            width: 51px;
+        }
+
+        
 
         /*HEADER > PODCAST LINKS*/
         .podcast-links-headers {
             list-style: none;
             display: none;
+            gap: 2.3rem;
+            margin: 0; 
+            padding: 0;
         }
 
         .podcast-links-headers > li > a {
             text-decoration: none;
+            font-size: 25px;
         }
 
         .podcast-links-headers > li > a:hover {
-            opacity: 0.5;
+            opacity: 0.85;
             transition: 300ms;
         }
 
@@ -130,11 +190,11 @@ header {
         /*HEADER > DROPDOWN*/
 
         .dropdown {
-            display:none;
+            display: inline-block;
             position: relative;
             
         }
-        
+
         .dropdown-content {
             display: none;
             position: absolute;
@@ -168,199 +228,81 @@ header {
         }
         
         .dropbtn {
-            font-size: 23px;
-            display: none;
+            display: flex;
             color: var(--default-font-color);
             background-color: var(--background-color);
             border: none;
             outline: none;
             cursor: pointer;
-        }
-
-
-
-        @media screen and (max-width: 730px){
-
-            .img {
-                height: 50px;
-            }
-            .podcast-links-headers, nav {
-                display: none;
-            }
-
-            .dropdown {
-                display: inline-block;
-            }
-
-            .dropbtn {
-                display: flex;
-            }
-
-            .name {
-                display: flex;
-            }
-
-            header {
-                padding: 20px 30px 20px 30px;
-            }
-
-
-            .container-welcome {
-                flex-direction: column;
-            }
-
-            .welcome-right > .img-welcome {
-                max-height: 40px;
-            }
-
-        }
-
-        /*HEADER > NAV*/
-
-        .dropbtn {
-            background-color: var(--background-color);
-            color: var(--default-font-color);
             font-size: 1.4em;
-            border: none;
         }
 
-        .dropbtn:hover, .dropbtn:focus {
-            cursor: pointer;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-          }
-
-
-          
-          
-          
-
-        .navbar-container {
-            display: none;
-        }
-
-        .navbar-container > nav > ul {
-            list-style: none;
-            align-content: center;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-            gap: 2rem;
-        }
-
-
-        .nav-link-ani, .nav-link-ano, .nav-link-ana {
-            text-decoration: none;
-            text-transform: uppercase;
+        .dropbtn:hover {
             opacity: 0.75;
+            transition: 300ms;
         }
 
-        .header-heading {
-            padding: 0;
-            margin: 0;
-            font-size: 1.8em;
-        }
-        
-@media (min-width: 730px){
 
-    header {
-        margin: 0;
-        justify-content: space-between;
-        padding: 2rem 2.7rem 2rem 2.7rem;
-    }
-
+        @media (max-width: 310px){
             .header-heading {
                 display: none;
             }
-    
-            /*HEADER > NAV*/
-    
-            .img {
-                height: 4rem;
-                border-radius: 2px;
-            }
-    
-            /*HEADER > PODCAST LINKS*/
-            .podcast-links-headers {
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                gap: 2.3rem;
-                margin: 0; 
-                padding: 0;
-            }
-    
-            .podcast-links-headers > li > a {
-                text-decoration: none;
-                font-size: 25px;
-            }
-    
-            .podcast-links-headers > li > a:hover {
-                opacity: 0.85;
-                transition: 300ms;
-            }
-    
-            /*HEADER > NAV*/
+        }
 
-            .dropdown {
-                display: none;
+        @media (min-width: 375px){
+            .header-heading {
+                font-size: 1em;
+            }
+        }
+
+        @media (min-width: 380px){
+            .header-heading {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (min-width: 500px){
+            .header-heading {
+                font-size: 2em;
+            }
+        }         
+        
+        @media (min-width: 730px){
+
+            header {
+                padding: 2rem 2.7rem 2rem 2.7rem;
             }
 
-            .navbar-container {
-                display: contents;
-            }
-
-            .navbar-container > nav > ul {
-                gap: 2.9rem;
-                list-style: none;
-                display: flex;
-                align-content: center;
-                justify-content: center;
-                padding: 0;
-                margin: 0;
-            }
-    
-            .nav-link-ani, .nav-link-ano, .nav-link-ana {
-                text-decoration: none;
-                font-size: 20px;
-                text-transform: uppercase;
-                opacity: 0.75;
-            }
-    
-            .nav-link-ani:hover, .nav-link-ano:hover, .nav-link-ana:hover {
-                opacity: 1;
-            }
-    
-            .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before {
-                transition: 300ms;
-                height: 5px;
-                content: "";
-                position: absolute;
-                top: 75px;
-                background-color: rgb(221,221,221);
-            }
-    
-            .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before {
-                width: 0%;
-                bottom: 5px;
-            }
-            .nav-link-ani:hover::before {
-                width: 98px;
-            }
-    
-            .nav-link-ano:hover::before {
-                
-                width: 130px;
-            }
-    
-            .nav-link-ana:hover::before {
-                width: 51px;
-            }
+                    .header-heading {
+                        display: none;
+                    }
             
-}
+                    /*HEADER*/
+            
+                    .img {
+                        height: 4rem;
+                        border-radius: 2px;
+                    }
+            
+                    /*HEADER > PODCAST LINKS*/
+                    .podcast-links-headers {
+                        display: flex;
+                        flex-direction: row;
+                    }
+            
+            
+                    /*HEADER > DROPDWN*/
+
+                    .dropdown {
+                        display: none;
+                    }
+
+                    /*HEADER > NAV*/
+
+                    .navbar-container {
+                        display: contents;
+                    }         
+        }
 
 
 
