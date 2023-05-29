@@ -380,6 +380,7 @@ header {
             color:var(--default-font-color);
             border: 2px solid var(--default-font-color);
             cursor: pointer;
+            transition: 300ms;
         }
 
         .subscribe:hover {
@@ -387,6 +388,7 @@ header {
             color:var(--background-color);
             border: 2px solid var(--background-color);
             cursor: pointer;
+            transition: 300ms;
         }
 
     /*WELCOME > RIGHT SIDE*/
@@ -459,12 +461,14 @@ header {
                 background-color: var(--background-color);
                 color:var(--default-font-color);
                 border: 2px solid var(--default-font-color);
+                transition: 300ms;
             }
     
             .subscribe:hover {
                 background-color: var(--default-font-color);
                 color:var(--background-color);
                 border: 2px solid var(--background-color);
+                transition: 300ms;
             }
     
         /*WELCOME > RIGHT SIDE*/
@@ -575,6 +579,7 @@ header {
                 background-color: var(--background-color);
                 color: var(--default-font-color);
                 border: 2px solid var(--default-font-color);
+                transition: 300ms;
             }
 
     /*EPISODES-SECTION > FEEDBACK CONTAINER*/
@@ -736,10 +741,12 @@ header {
             background-color: var(--default-font-color);
             color: var(--background-color);
             border: 2px solid var(--background-color);
+            transition: 300ms;
         }
 
         .podcast-links > a > label:hover {
             cursor: pointer;
+            transition: 300ms;
         }
 
 
@@ -804,6 +811,11 @@ header {
 
         .author-name {
             text-decoration: none;
+        }
+
+        .author-name:hover {
+            transition: 300ms;
+            opacity: 0.75;
         }
 
 
