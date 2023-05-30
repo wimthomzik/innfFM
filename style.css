@@ -777,7 +777,7 @@ header {
 
         .author-name:hover {
             transition: 300ms;
-            opacity: 0.75;
+            opacity: 0.85;
         }
 
 
@@ -929,6 +929,59 @@ footer {
             margin: 1rem 0 0 0;
         }
     
+
+        /*       MODAL DATENSCHUTZ        */
+
+        .modalDatenschutz {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+      
+        /* Modal Content/Box */
+        .modal-content-datenschutz {
+            background-color: var(--background-color);
+            margin: 6% auto; /* 6% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button */
+        .close2 {
+            color: var(--default-font-color);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close2:hover,
+        .close2:focus {
+            opacity: 0.75;
+            transition: 300ms;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+        .datenschutzBTN {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: var(--default-font-color);
+            background-color: var(--background-color);
+            padding: 0;
+            outline: none;
+            font-size: 1em;
+            all: unset;
+            cursor: pointer;
+        }
 
 
 
