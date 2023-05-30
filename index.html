@@ -10,7 +10,7 @@
     </head>
     <body>
 
-        <!--HEADER-->
+        <!-----------------------------HEADER START--------------------------------------->
         
         <header>
 
@@ -41,6 +41,8 @@
             
         </header>
 
+        <!-----------------------------HEADER ENDE--------------------------------------->
+
         <div id="myDropdown" class="dropdown-content">
             <a href="#welcome-section">Home</a>
             <a href="#section-episodes">Episoden</a>
@@ -48,7 +50,7 @@
             <a href="#section-host">Host</a>
           </div>
 
-        <!--WELCOME SECTION-->
+        <!-----------------------------WELCOME START--------------------------------------->
         <section id="welcome-section">
             <div class="container-welcome">
                 <div class="welcome-right">
@@ -69,8 +71,11 @@
                
             </div>
         </section>
+        <!-----------------------------WELCOME ENDE--------------------------------------->
 
-        <!--EPISODES SECTION-->
+
+
+        <!-----------------------------EPISODES START--------------------------------------->
                 <section id="section-episodes">
                     <div class="container-episodes-section">
                         <h1 class="heading-episodes-section">Neueste Episoden</h1>
@@ -142,8 +147,10 @@
                     </div>
                     
                 </section>
+        <!-----------------------------EPISODES ENDE--------------------------------------->       
+
         
-        <!--SOURCES SECTION-->
+        <!-----------------------------SOURCES START--------------------------------------->
         <section id="section-sources">
             <div class="container-sources">
                 <h1 class="heading-sources">Folge mir und verpasse keine Episode</h1>
@@ -158,9 +165,9 @@
                 </div>
             </div>
         </section>
+        <!-----------------------------SOURCES ENDE--------------------------------------->
 
-
-        <!--ABOUT SECTION-->
+        <!-----------------------------ABOUT START--------------------------------------->
         <section id="section-host">
             <div class="container-host-section">
                     <div class="container-author">
@@ -176,16 +183,16 @@
                 </div> 
             </div>
         </section>
+        <!-----------------------------ABOUT ENDE--------------------------------------->
 
 
 
-
-        <!--FOOTER-->
+        <!-----------------------------FOOTER START--------------------------------------->
         <footer> 
             
                 <span class="copyright">©2023 INNOFM</span>
                 |
-                <!-- Trigger/Open The Modal -->
+                <!-----------------------------MODAL IMPRESSUM START--------------------------------------->
                 <button id="modalBtn" class="impressumBTN">IMPRESSUM</button>
 
                 <!-- The Modal -->
@@ -243,6 +250,7 @@
                 </div>
                 </div>
                 </div>
+                <!-----------------------------MODAL IMPRESSUM ENDE--------------------------------------->
                 |
                 <button id="modalBtn2" class="impressumBTN">DATENSCHUTZ</button>
                 |
@@ -250,62 +258,8 @@
 
         </footer>
 
-        <script>
-
-            //DROPDOWN
-
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-          
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-
-            // Close the dropdown if the user clicks outside of it
-
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-
-            //POPUP WINDOWS
-
-            // Get the modal
-            var modal = document.getElementById("myModal");
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("modalBtn");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on the button, open the modal 
-            btn.onclick = function() {
-            modal.style.display = "block";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-            }
-
-
-            </script>
+        <!-----------------------------FOOTER ENDE--------------------------------------->
+       
     </body>
+    <script type="text/javascript" src="script.js"></script>
 </html>
