@@ -8,65 +8,14 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="episodes.css">
         <script src="https://kit.fontawesome.com/95e67c130a.js" crossorigin="anonymous"></script>
+        
     </head>
     <body>
 
 
-
-
-
-
-
-
-
-
-
-        <!--HEADER-->
-        <header>
-            <img class="img" src="img/InnoFM_gross.jpg"> 
-
-            <h1 class="header-heading">InnoFM Podcast</h1>
-            
-           <div class="navbar-container">
-                <nav>
-                    <ul>
-                        <li><a class="nav-link-ani" href="index.html#section-episodes">Episoden</a></li>
-                        <li><a class="nav-link-ano" href="index.html#section-sources">Abonnieren</a></li>
-                        <li><a class="nav-link-ana" href="index.html#section-host">Host</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <ul class="podcast-links-headers">
-                <li><a href="https://podcasts.apple.com/de/podcast/innofm-interviewpodcast/id1465389661" class="fa-brands fa-apple"></a></li>
-                <li><a href="https://open.spotify.com/show/2F01b8YJJhX6rF1FCxVJrt?si=vlm4sLBWQ8SnUQM5nEqC3g&nd=1" class="fa-brands fa-spotify"></a></li>
-                <li><a href="https://music.amazon.de/podcasts/211090e3-bb52-4a80-aa7a-d6287e8d520d/innofm---interviewpodcast?ref=dm_sh_lg535rVJuIeZ2gXq0Cz0cJYEY" class="fa-brands fa-amazon"></a></li>
-            </ul>
-
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars dropbtn"></i></button>
-                
-              </div>
-            
-        </header>
-
-        <div id="myDropdown" class="dropdown-content">
-            <a href="index.html#welcome-section">Home</a>
-            <a href="index.html#section-episodes">Episoden</a>
-            <a href="index.html#section-sources">Abonnieren</a>
-            <a href="index.html#section-host">Host</a>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
+        <!-----------------------------HEADER START--------------------------------------->
+        <header-component></header-component>
+        <!-----------------------------HEADER END--------------------------------------->
 
 
 
@@ -881,58 +830,17 @@
                     
                 </section>
     
-        <script>
-            let loadMoreBtn = document.querySelector('#show-more');
-            let currentItem = 5;
-
-            loadMoreBtn.onclick = () =>{
-                let containerEpisodePost = [...document.querySelectorAll('.container-episode-post')];
-
-                for(var i = currentItem; i < currentItem + 5; i++){
-                    containerEpisodePost[i].style.display = 'flex';
-                }
-                currentItem += 5;
-
-                if(currentItem >= containerEpisodePost.length){
-                    loadMoreBtn.style.display = 'none';
-                }
-            }
-        </script>
+        
 
 
 
 
-        <!--FOOTER-->
-        <footer>
-
-            <div class="other-links">
-                <span>© Copyright</span>
-                <span>Private Policy</span>
-                <a href="mailto:podcast@thomzik.de">Email</a>
-            </div>
-
-        </footer>
-
-        <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-            </script>
+        <!-----------------------------FOOTER START--------------------------------------->
+        <footer-component></footer-component>
+        <!-----------------------------FOOTER ENDE--------------------------------------->
     </body>
+    
+    <script src="header.js" type="text/javascript" defer></script>
+    <script src="footer.js" type="text/javascript" defer></script>
+    <script src="index.js" type="text/javascript" defer></script>
 </html>

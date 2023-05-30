@@ -86,3 +86,23 @@
                 modal2.style.display = "none";
             }
             }
+
+
+
+        //LOAD MORE BUTTON EPISODES.HTML
+
+        let loadMoreBtn = document.querySelector('#show-more');
+        let currentItem = 5;
+
+        loadMoreBtn.onclick = () =>{
+            let containerEpisodePost = [...document.querySelectorAll('.container-episode-post')];
+
+            for(var i = currentItem; i < currentItem + 5; i++){
+                containerEpisodePost[i].style.display = 'flex';
+            }
+            currentItem += 5;
+
+            if(currentItem >= containerEpisodePost.length){
+                loadMoreBtn.style.display = 'none';
+            }
+        }
