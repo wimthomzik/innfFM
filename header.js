@@ -253,7 +253,7 @@ class Header extends HTMLElement {
         <!-----------------------------HEADER START--------------------------------------->
         <header>
 
-            <img class="img" src="InnoFM_gross.jpg"> 
+            <img class="img" src="InnoFM_gross.webp" loading="lazy"> 
 
             <h1 class="header-heading">InnoFM Podcast</h1>
             
