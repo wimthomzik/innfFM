@@ -52,7 +52,7 @@ class Header extends HTMLElement {
                     display: flex;
                     align-content: center;
                     justify-content: center;
-                    gap: 1.8rem;
+                    gap: 1.1rem;
         
                     padding: 0;
                     margin: 0;
@@ -63,18 +63,18 @@ class Header extends HTMLElement {
         
         
         
-                .nav-link-ani, .nav-link-ano, .nav-link-ana {
+                .nav-link-ani, .nav-link-ano, .nav-link-ana, .nav-link-ane {
                     text-decoration: none;
                     font-size: 20px;
                     text-transform: uppercase;
                     opacity: 0.75;
                 }
         
-                .nav-link-ani:hover, .nav-link-ano:hover, .nav-link-ana:hover {
+                .nav-link-ani:hover, .nav-link-ano:hover, .nav-link-ana:hover, .nav-link-ane:hover {
                     opacity: 1;
                 }
         
-                .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before {
+                .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before, .nav-link-ane::before{
                     transition: 300ms;
                     height: 5px;
                     content: "";
@@ -83,7 +83,7 @@ class Header extends HTMLElement {
                     background-color: rgb(221,221,221);
                 }
         
-                .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before {
+                .nav-link-ani::before, .nav-link-ano::before, .nav-link-ana::before, .nav-link-ane::before {
                     width: 0%;
                     bottom: 5px;
                 }
@@ -98,6 +98,10 @@ class Header extends HTMLElement {
         
                 .nav-link-ana:hover::before {
                     width: 51px;
+                }
+
+                .nav-link-ane:hover::before {
+                    width: 60px;
                 }
         
                 
@@ -245,7 +249,7 @@ class Header extends HTMLElement {
                 
                 @media (min-width: 900px){
                     .navbar-container > nav > ul {
-                        gap: 4rem;
+                        gap: 3rem;
                     }
                 }
         </style>
@@ -260,6 +264,7 @@ class Header extends HTMLElement {
            <div class="navbar-container">
                 <nav>
                     <ul>
+                        <li><a class="nav-link-ane" href="index.html#welcome-section">Home</a></li>
                         <li><a class="nav-link-ani" href="index.html#section-episodes">Episoden</a></li>
                         <li><a class="nav-link-ano" href="index.html#section-sources">Abonnieren</a></li>
                         <li><a class="nav-link-ana" href="index.html#section-host">Host</a></li>
