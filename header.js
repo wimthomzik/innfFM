@@ -36,6 +36,7 @@ class Header extends HTMLElement {
         
                 /*HEADER > TITLE*/
                 .header-heading {
+                    display: none;
                     padding: 0;
                     margin: 0;
                     font-size: 0.8em;
@@ -186,21 +187,16 @@ class Header extends HTMLElement {
                 }
         
         
-                @media (max-width: 310px){
+                @media (min-width: 375px){
                     .header-heading {
                         display: none;
                     }
                 }
         
-                @media (min-width: 375px){
-                    .header-heading {
-                        font-size: 1em;
-                    }
-                }
-        
                 @media (min-width: 380px){
                     .header-heading {
-                        font-size: 1.5em;
+                        display: block;
+                        font-size: 1em;
                     }
                 }
         
