@@ -97,6 +97,17 @@ footer {
             padding: 0;
             margin: 1rem 0 0 0;
         }
+
+        @media (max-width: 517px) {
+            .modal-body > .datenHeading {
+                font-size: 1.1em;
+            }
+        }
+        @media (max-width: 414px) {
+            .modal-body > .aenderungHeading {
+                font-size: 1em;
+            }
+        }
     
 
         /*       MODAL DATENSCHUTZ        */
@@ -170,24 +181,10 @@ footer {
                         <h1>IMPRESSUM</h1><br>
                         <p>Pflichtangaben nach § 5 Telemediengesetz (TMG), § 55 Rundfunk-Staatsvertrag (RStV):</p>
                         <P><b>InnoFM Interview Podcast</b><br>
-                        Markus Thomzik<br>
-                        Feldhauskamp 103<br>
-                        45138 Essen</P>
-                        <table class="adresse">
-                        <tr>
-                        <td>
-                        Telefon<br>
-                        E-Mail<br>
-                        Web<br>
-                        USt-IdNr.
-                        </td> 
-                        <td>
-                        +49 170 1822779<br>
-                        podcast@thomzik.de<br>
-                        www.innofm.de<br>
-                        ??????????????</td>                     	
-                        </tr>
-                        </table><br>
+                        </P>
+                        <p>
+                            E-Mail: podcast@thomzik.de <br> 
+                            Web: www.innofm.de</p>
                         <p> Verantwortlich im Sinne des Medienrechts: Markus Thomzik</p> 
                         <p>Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
         
@@ -225,12 +222,10 @@ footer {
                     <div class="modal-content-datenschutz">
                         <span class="close2">&times;</span>
                         <div class="modal-body">
-                            <h1>Datenschutzerklärung</h1>
+                            <h1 class="datenHeading">Datenschutzerklärung</h1><br>
                             <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
                             <p>Markus Thomzik
-                            <br>Feldhauskamp 103
-                            <br>45138 Essen
-                            <br>+49 170 1822779</p>
+                            <br>podcast@thomzik.de</p>
                             <h2>Ihre Betroffenenrechte</h2>
                             <p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:</p>
                             <ul>
@@ -271,11 +266,11 @@ footer {
                             <p>Wie viele andere Webseiten verwenden wir auch so genannte „Cookies“. Bei Cookies handelt es sich um kleine Textdateien, die auf Ihrem Endgerät (Laptop, Tablet, Smartphone o.ä.) gespeichert werden, wenn Sie unsere Webseite besuchen. </p>
                             <p>Sie können Sie einzelne Cookies oder den gesamten Cookie-Bestand löschen. Darüber hinaus erhalten Sie Informationen und Anleitungen, wie diese Cookies gelöscht oder deren Speicherung vorab blockiert werden können. Je nach Anbieter Ihres Browsers finden Sie die notwendigen Informationen unter den nachfolgenden Links:</p>
                             <ul>
-                            <li>Mozilla Firefox: <a href="https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen" target="_blank" rel="nofollow noopener">https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen</a></li>
-                            <li>Internet Explorer: <a href="https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="nofollow noopener">https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies</a></li>
-                            <li>Google Chrome: <a href="https://support.google.com/accounts/answer/61416?hl=de" target="_blank" rel="nofollow noopener">https://support.google.com/accounts/answer/61416?hl=de</a></li>
-                            <li>Opera: <a href="http://www.opera.com/de/help" target="_blank" rel="nofollow noopener">http://www.opera.com/de/help</a></li>
-                            <li>Safari: <a href="https://support.apple.com/kb/PH17191?locale=de_DE&viewlocale=de_DE" target="_blank" rel="nofollow noopener">https://support.apple.com/kb/PH17191?locale=de_DE&viewlocale=de_DE</a></li>
+                            <li><a href="https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen" target="_blank" rel="nofollow noopener">Mozilla Firefox</a></li>
+                            <li><a href="https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="nofollow noopener">Internet Explorer</a></li>
+                            <li><a href="https://support.google.com/accounts/answer/61416?hl=de" target="_blank" rel="nofollow noopener">Google Chrome</a></li>
+                            <li><a href="http://www.opera.com/de/help" target="_blank" rel="nofollow noopener">Opera</a></li>
+                            <li><a href="https://support.apple.com/kb/PH17191?locale=de_DE&viewlocale=de_DE" target="_blank" rel="nofollow noopener">Safari</a></li>
                             </ul>
                             <h3>Speicherdauer und eingesetzte Cookies:</h3>
                             <p>Soweit Sie uns durch Ihre Browsereinstellungen oder Zustimmung die Verwendung von Cookies erlauben, können folgende Cookies auf unseren Webseiten zum Einsatz kommen:</p>
@@ -302,13 +297,11 @@ footer {
                             <p>Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
                             <h3>Empfänger eines Widerspruchs</h3>
                             <p>Markus Thomzik
-                            <br>Feldhauskamp 103
-                            <br>45138 Essen
-                            <br>+49 170 1822779</p>
+                            <br>podcast@thomzik.de
                             <hr>
-                            <h2>Änderung unserer Datenschutzbestimmungen</h2>
+                            <h2 class="aenderungHeading">Änderung unserer Datenschutzbestimmungen</h2>
                             <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
-                            <h2>Fragen an den Datenschutzbeauftragten</h2>
+                            <h2 class="aenderungHeading">Fragen an den Datenschutzbeauftragten</h2>
                             <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>
                             <p></p><p><em>Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener">externe Datenschutzbeauftragte</a> (Version #2020-09-30).</em></p>
                     </div>

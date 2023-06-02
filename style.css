@@ -165,7 +165,7 @@ a, h1 h2, h3, h4, h5, h6, p{
     @media (min-width: 730px) {
 
         .container-welcome {
-            margin: 0rem 0rem 3rem 0rem;
+            margin: 2rem 0rem 3rem 0rem;
             padding: 2rem 2.7rem 2.7rem 2.7rem;
             flex-direction: row-reverse;
             justify-content: space-between;
