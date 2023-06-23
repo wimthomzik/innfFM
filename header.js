@@ -254,9 +254,9 @@ class Header extends HTMLElement {
         <!-----------------------------HEADER START--------------------------------------->
         <header>
 
-            <img class="img" src="img/Markus_Logo_Variante.jpg" loading="lazy"> 
+            <img class="img" src="img/Markus_Logo_Variante.png" loading="lazy"> 
 
-            <h1 class="header-heading">InnoFM Podcast</h1>
+            <!--<h1 class="header-heading">InnoFM Podcast</h1>-->
             
            <div class="navbar-container">
                 <nav>
