@@ -12,7 +12,7 @@ class Header extends HTMLElement {
   
         header {
             width: 100%;
-            max-height: 9em;
+            max-height: 7em;
         
             z-index: 10000;
             
@@ -22,6 +22,8 @@ class Header extends HTMLElement {
             display: flex;
             justify-content: space-between;
             align-items: center;   
+            /*position: fixed;
+            background-color: var(--background-color);*/
         }
         
         
@@ -31,7 +33,6 @@ class Header extends HTMLElement {
                 /*HEADER > IMG*/
                 .img {
                     height: 3.5rem;
-                    border-radius: 2px;
                 }
         
                 /*HEADER > TITLE*/
@@ -80,7 +81,7 @@ class Header extends HTMLElement {
                     height: 5px;
                     content: "";
                     position: absolute;
-                    top: 75px;
+                    top: 65px;
                     background-color: rgb(221,221,221);
                 }
         
@@ -209,7 +210,7 @@ class Header extends HTMLElement {
                 @media (min-width: 730px){
         
                     header {
-                        padding: 2rem 2.7rem 2rem 2.7rem;
+                        padding: 1.3rem 2.7rem 1.3rem 2.7rem;
                     }
         
                             .header-heading {
@@ -253,7 +254,7 @@ class Header extends HTMLElement {
         <!-----------------------------HEADER START--------------------------------------->
         <header>
 
-            <img class="img" src="InnoFM_gross.webp" loading="lazy"> 
+            <img class="img" src="img/Markus_Logo_Variante.jpg" loading="lazy"> 
 
             <h1 class="header-heading">InnoFM Podcast</h1>
             
