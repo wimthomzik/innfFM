@@ -188,14 +188,11 @@ footer {
                         <p> Verantwortlich im Sinne des Medienrechts: Markus Thomzik</p> 
                         <p>Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
         
-                        <p><b>Bildnachweise:</b><br>
-                            Lichtschacht</p>
-        
                        
                         <p><b>Zusammenarbeit:</b><br>
                             Logo:  Anja Kalmann / <a href="https://www.kalmann-design.de/kalmann-persoenliches.html" target="_blank">www.kalmann-design.de</a><br> 
-                            Fotos: Lichtschacht / <a href="https://lichtschacht.com" target="_blank">www.lichtschacht.com</a><br>
-                            WebDesign: Wim Thomzik /  <a href="https://www.linkedin.com/in/wim-thomzik-626b7420a/" target="_blank">www.linkedin.com/wim-thomzik</a></p>
+                            Foto: Lichtschacht / <a href="https://lichtschacht.com" target="_blank">www.lichtschacht.com</a><br>
+                            Technische Umsetzung: Wim Thomzik /  <a href="https://www.linkedin.com/in/wim-thomzik-626b7420a/" target="_blank">www.linkedin.com/wim-thomzik</a></p>
         
         
                         <h4>Haftung für Inhalte</h4>

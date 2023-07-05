@@ -33,6 +33,7 @@ class Header extends HTMLElement {
                 /*HEADER > IMG*/
                 .img {
                     height: 3.5rem;
+                    margin-bottom: 0.5rem;
                 }
         
                 /*HEADER > TITLE*/
@@ -81,7 +82,7 @@ class Header extends HTMLElement {
                     height: 5px;
                     content: "";
                     position: absolute;
-                    top: 65px;
+                    top: 68px;
                     background-color: rgb(221,221,221);
                 }
         
@@ -112,7 +113,7 @@ class Header extends HTMLElement {
                 .podcast-links-headers {
                     display: none;
                     gap: 2.3rem;
-        
+                    
                     list-style: none;
         
                     margin: 0; 
@@ -142,7 +143,7 @@ class Header extends HTMLElement {
                 .dropdown-content {
                     display: none;
                     position: absolute;
-                    background-color: var(--background-color);
+                    background: linear-gradient(to bottom right, rgb(34,34,34), rgb(63, 63, 63));
                     width: 100%;
                     overflow: hidden;
                     right: 0;
