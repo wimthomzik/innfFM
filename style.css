@@ -4,7 +4,7 @@
 }
 
 :root {
-    --background-color: linear-gradient(to bottom right, rgb(34,34,34), rgb(63, 63, 63));;
+    --background-color: linear-gradient(to bottom right, rgb(34,34,34), rgb(63, 63, 63));
     --default-font-color:rgb(221,221,221);
     --special-color:#bf8148;
     --xxxl-font-size: 3.3rem;

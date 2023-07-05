@@ -145,12 +145,11 @@ class Header extends HTMLElement {
                     position: absolute;
                     background: linear-gradient(to bottom right, rgb(34,34,34), rgb(63, 63, 63));
                     width: 100%;
-                    overflow: hidden;
                     right: 0;
                     z-index: 1;
                     text-align: center;
                     justify-content: center;
-                    padding: 7.5rem 0;
+                    padding: 2rem 0;
                 }
         
                 .dropdown-content a {
