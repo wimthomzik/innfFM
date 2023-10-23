@@ -45,7 +45,7 @@ footer {
   
     /* Modal Content/Box */
     .modal-content-Impressum {
-        background-color: var(--background-color);
+        background: var(--background-color);
         margin: 6% auto; /* 6% from the top and centered */
         padding: 20px;
         border: 1px solid #888;
@@ -127,7 +127,7 @@ footer {
       
         /* Modal Content/Box */
         .modal-content-datenschutz {
-            background-color: var(--background-color);
+            background: var(--background-color);
             margin: 6% auto; /* 6% from the top and centered */
             padding: 20px;
             border: 1px solid #888;
@@ -190,9 +190,9 @@ footer {
         
                        
                         <p><b>Zusammenarbeit:</b><br>
-                            Logo:  Anja Kalmann / <a href="https://www.kalmann-design.de/kalmann-persoenliches.html" target="_blank">www.kalmann-design.de</a><br> 
-                            Foto: Lichtschacht / <a href="https://lichtschacht.com" target="_blank">www.lichtschacht.com</a><br>
-                            Technische Umsetzung: Wim Thomzik /  <a href="https://www.linkedin.com/in/wim-thomzik-626b7420a/" target="_blank">www.linkedin.com/wim-thomzik</a></p>
+                            Logo:  Anja Kalmann / <a target="_blank" href="https://www.kalmann-design.de/kalmann-persoenliches.html" target="_blank">www.kalmann-design.de</a><br> 
+                            Foto: Lichtschacht / <a target="_blank" href="https://lichtschacht.com" target="_blank">www.lichtschacht.com</a><br>
+                            Technische Umsetzung: Wim Thomzik /  <a target="_blank" href="https://www.linkedin.com/in/wim-thomzik-626b7420a/" target="_blank">www.linkedin.com/wim-thomzik</a></p>
         
         
                         <h4>Haftung für Inhalte</h4>

@@ -270,9 +270,9 @@ class Header extends HTMLElement {
             </div>
 
             <ul class="podcast-links-headers">
-                <li><a href="https://podcasts.apple.com/de/podcast/innofm-interviewpodcast/id1465389661" class="fa-brands fa-apple"></a></li>
-                <li><a href="https://open.spotify.com/show/2F01b8YJJhX6rF1FCxVJrt?si=vlm4sLBWQ8SnUQM5nEqC3g&nd=1" class="fa-brands fa-spotify"></a></li>
-                <li><a href="https://music.amazon.de/podcasts/211090e3-bb52-4a80-aa7a-d6287e8d520d/innofm---interviewpodcast?ref=dm_sh_lg535rVJuIeZ2gXq0Cz0cJYEY" class="fa-brands fa-amazon"></a></li>
+                <li><a href="https://podcasts.apple.com/de/podcast/innofm-interviewpodcast/id1465389661" class="fa-brands fa-apple" target=”_blank”></a></li>
+                <li><a href="https://open.spotify.com/show/2F01b8YJJhX6rF1FCxVJrt?si=vlm4sLBWQ8SnUQM5nEqC3g&nd=1" class="fa-brands fa-spotify"  target=”_blank”></a></li>
+                <li><a href="https://music.amazon.de/podcasts/211090e3-bb52-4a80-aa7a-d6287e8d520d/innofm---interviewpodcast?ref=dm_sh_lg535rVJuIeZ2gXq0Cz0cJYEY" class="fa-brands fa-amazon"  target=”_blank”></a></li>
             </ul>
 
             <div class="dropdown">
